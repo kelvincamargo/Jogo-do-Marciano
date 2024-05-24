@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Marciano</title>
+    <link rel="stylesheet" href="css/simple-grid.css">
+    <link rel="stylesheet" href="css/simple-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/funcao.js"></script>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: rgb(33, 155, 3);
+            overflow: auto;
+        }
+
+        .navbar a {
+            float: left;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+            font-family: Raleway;
+        }
+
+        p {
+            font-size: 48px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(15, 14, 14);
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #696969;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .button:hover {
+            background-color: #1C1C1C;
+            transform: scale(1.05);
+        }
+
+        .button:active {
+            background-color: #004080;
+        }
+
+        .container {
+            margin-top: 5%;
+        }
+
+        .col-4 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="navbar">
+            <a>JOGO DO MARCIANO</a>
+        </div>
+    </center>
+    <div class="container">
+        <center>
+            <div class="row">
+                <div class="col-4">
+                    <img src="IMG/Arvoreee.png" width="300" height="300" id="arvore1">
+                    <button class="button" onclick="ATIRAR(1)">ATIRAR</button>
+                </div>
+                <div class="col-4">
+                    <img src="IMG/Arvoreee.png" width="300" height="300" id="arvore2">
+                    <button class="button" onclick="ATIRAR(2)">ATIRAR</button>
+                </div>
+                <div class="col-4">
+                    <img src="IMG/Arvoreee.png" width="300" height="300" id="arvore3">
+                    <button class="button" onclick="ATIRAR(3)">ATIRAR</button>
+                </div>
+                <div class="col-4">
+                    <img src="IMG/Arvoreee.png" width="300" height="300" id="arvore4">
+                    <button class="button" onclick="ATIRAR(4)">ATIRAR</button>
+                </div>
+                <div class="col-4">
+                    <img src="IMG/Arvoreee.png" width="300" height="300" id="arvore5">
+                    <button class="button" onclick="ATIRAR(5)">ATIRAR</button>
+                </div>
+                <div class="col-4">
+                    <img src="IMG/Arvoreee.png" width="300" height="300" id="arvore6">
+                    <button class="button" onclick="ATIRAR(6)">ATIRAR</button>
+                </div>
+            </div>
+        </center>
+        <center>
+            <h3 id="titulo"></h3>
+        </center>
+    </div>
+    <div class="navbar">
+        <br>
+    </div>
+</body>
+</html>
